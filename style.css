@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 .nav-first-section {
     display: flex;
     justify-content: space-between;
@@ -21,13 +23,17 @@
 .nav-first-section a:hover {
     color: white;
 }
-
-
+.nav-second-section {
+    position: sticky;
+    top:0;
+}
 
 .white-part {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    height: 45px;
+    align-items: center;
+    background-color: white;
 }
 
 .white-part a {
@@ -44,6 +50,12 @@
 
 .nav-section-icon {
     border-left: 1px solid grey;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 10px;
 }
 
 .nav-section-icon:hover a {
@@ -54,14 +66,71 @@
 }
 
 .yellow-part {
+    box-sizing: border-box;
     height: 30px;
     width: 100%;
     color: black;
     text-decoration: none;
-    background-color: yellow;
+    background-color: #F9DD33;
     display: inline-block;
     font-size: 14px;
     line-height: 30px;
     padding-left: 15px;
 }
+.hot-news {
+    margin: 5px;
+}
 
+.first-news {
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Disney-Plus-796x417.jpg) center center no-repeat;
+    background-size: cover; 
+    width: 796px;
+    height: 417px;
+    position: relative;
+}
+.first-news img {
+    width: 405px;
+    height: 112px;
+    z-index: 999;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.gradient {
+    position: absolute;
+    background: rgb(2,0,36);
+    background: linear-gradient(159deg, #E83B16 000%,#E83B16 60%,rgba(9,9,121,0) 90%, rgba(9,9,121,0) 100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+.date {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white;
+}
+.title-section {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+.title-info {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 4px;
+}
+.title-category, .title {
+    color: white;
+}
+.title-info * {
+    color: gray;
+}
+.title {
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+}
+.author a {
+    text-decoration: none;
+}
