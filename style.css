@@ -1,5 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 .nav-first-section {
     display: flex;
     justify-content: space-between;
@@ -232,7 +230,6 @@ grid-gap: 10px;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    text-decoration: none !important;
 }
 .latest-news-author, .latest-news-author a {
     font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
@@ -381,3 +378,16 @@ grid-gap: 10px;
 .gray {
     color: rgb(170, 170, 170);
 }
+
+.category-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: .5fr 1fr .5fr 1fr */
+}
+
+
+.image-text img {
+    width:96px;
+    height: 96px;
+}
+
