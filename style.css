@@ -94,7 +94,6 @@ nav {
 .first-news {
     background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Disney-Plus-796x417.jpg) center center no-repeat;
     background-size: cover; 
-    /* width: 796px; */
     height: 417px;
     position: relative;
     grid-area: first-news;
@@ -215,14 +214,14 @@ grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30px repeat(2, 1fr);
     grid-gap: 5px;
+    width: 80%;
     margin-top: 5em;
     margin-left: 10%;
     margin-right: 10%;
-
 }
 
 .latest-news-section > div {
-    width: 270px;
+    max-width: 270px;
 }
 .latest-news-section > div > * {
     font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
@@ -233,6 +232,7 @@ grid-gap: 10px;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    text-decoration: none !important;
 }
 .latest-news-author, .latest-news-author a {
     font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
@@ -251,7 +251,7 @@ grid-gap: 10px;
 
 .latest-news-section img {
     width: 100%;
-    height: 135px;
+    max-height: 135px;
 }
 
 .latest-news-title {
@@ -264,4 +264,120 @@ grid-gap: 10px;
 }
 .latest-news-title:hover {
     color: black;
+}
+.left-border {
+    border-left: 1px solid orangered;
+}
+.funds-title h3, .funds-title h3 a{
+    float: left;
+    font-family: Avalon, sans-serif;
+    font-size: 28px;
+    font-weight: 990;
+    line-height: 32px;
+    color: orangered;
+    text-decoration: none;
+}
+.funds-title div * {
+    float: right;
+    padding: 0 5px;
+    margin: 5px;
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: orangered;
+    text-decoration: none;
+}
+.funds-title *:hover {
+    color: black;
+}
+.latest-funds {
+    margin: 0 10%;
+}
+.funds-container {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+.funds {
+    width: 23%;
+    height: 293.13px;
+    position: relative;
+}
+.funds-titles {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 39.31px;
+    background-color: orangered;
+    color: white;
+    font-family: Avalon, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.funds-titles * {
+    margin-left: 40%;
+}
+.funds-amount {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #FCEBE7;
+    color: black;
+    font-family: Avalon, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 10px 0;
+}
+.funds-amount * {
+    margin-left: 40%;
+}
+.funds-amount p {
+    font-family: Shentox, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.funds img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 5%;
+    top: 10px;
+}
+.funds-info {
+    border-bottom: 1px solid orangered;
+    margin-bottom: 5px;
+    padding: 15px 0;
+}
+.funds-info *{
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    display: block;
+}
+.funds-info a {
+    margin-left: 5px;
+}
+.funds-info a:hover {
+    color: black;
+}
+.funds-info i {
+    color: black;
+    font-size: 16px;
+}
+.funds-news a {
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    color:  rgb(85, 85, 85);
+    display: block;
+}
+.gray {
+    color: rgb(170, 170, 170);
 }
