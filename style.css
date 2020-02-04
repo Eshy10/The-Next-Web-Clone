@@ -79,14 +79,22 @@
 }
 .hot-news {
     margin: 5px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'first-news second-news'
+    'first-news third-news';
+    grid-gap: 8px;
 }
 
 .first-news {
     background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Disney-Plus-796x417.jpg) center center no-repeat;
     background-size: cover; 
-    width: 796px;
+    /* width: 796px; */
     height: 417px;
     position: relative;
+    grid-area: first-news;
 }
 .first-news img {
     width: 405px;
@@ -99,7 +107,7 @@
 .gradient {
     position: absolute;
     background: rgb(2,0,36);
-    background: linear-gradient(159deg, #E83B16 000%,#E83B16 60%,rgba(9,9,121,0) 90%, rgba(9,9,121,0) 100%);
+    background: linear-gradient(159deg, #E83B16 000%,#E83B16 50%,rgba(9,9,121,0) 80%, rgba(9,9,121,0) 100%);
     width: 100%;
     height: 100%;
     opacity: 0.7;
@@ -121,11 +129,26 @@
     grid-template-columns: repeat(3, 110px);
     grid-gap: 4px;
 }
+
+.title-small {
+    line-height: 1.5em;
+}
+
 .title-category, .title {
     color: white;
+  
 }
+
+.title-section {
+display: grid;
+grid-template-rows: repeat(3, auto);
+grid-gap: 10px;
+}
+
+
 .title-info * {
-    color: gray;
+    color: rgb(197, 194, 194);
+    font-size: 15px;
 }
 .title {
     font-size: 75px;
@@ -133,4 +156,63 @@
 }
 .author a {
     text-decoration: none;
+}
+
+.second-news {
+    grid-area: second-news;
+    background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/nasacolony-796x389.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.third-news {
+    grid-area: third-news;
+    background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Google-photos-796x418.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.second-news img, .third-news img {
+    width: 100%;
+    
+}
+
+.title-small {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.second-gradient {
+    position: absolute;
+    background: #000;
+    background: linear-gradient(-20deg, #000 000%,#000 40%,rgba(9,9,121,0) 60%, rgba(9,9,121,0) 100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.latest-news-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10px repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-top: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+
+}
+
+.latest-news-section > div {
+    width: 270px;
+}
+
+.latest-news-section img {
+    width: 100%;
+    height: 135px;
+}
+
+.latest-news-title {
+    grid-column: 1/ -1;
 }
