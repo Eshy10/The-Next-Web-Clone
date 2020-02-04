@@ -47,6 +47,9 @@
     color: black;
 }
 
+nav {
+    z-index: 9999999;
+}
 
 .nav-section-icon {
     border-left: 1px solid grey;
@@ -97,11 +100,11 @@
     grid-area: first-news;
 }
 .first-news img {
-    width: 405px;
-    height: 112px;
+    width: 50%;
+    height: auto;
     z-index: 999;
     position: absolute;
-    top: 5px;
+    top: 12px;
     left: 10px;
 }
 .gradient {
@@ -131,7 +134,10 @@
 }
 
 .title-small {
-    line-height: 1.5em;
+    font-family: Avalon, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30.8px;
 }
 
 .title-category, .title {
@@ -151,8 +157,10 @@ grid-gap: 10px;
     font-size: 15px;
 }
 .title {
-    font-size: 75px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 56px;
+    font-family: Avalon, sans-serif;
+    font-weight: 700;
+    line-height: 56px;
 }
 .author a {
     text-decoration: none;
@@ -170,6 +178,15 @@ grid-gap: 10px;
     background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Google-photos-796x418.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
+}
+
+.first-news > a, .second-news > a, .third-news > a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
 }
 
 .second-news img, .third-news img {
@@ -196,16 +213,40 @@ grid-gap: 10px;
 .latest-news-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10px repeat(2, 1fr);
+    grid-template-rows: 30px repeat(2, 1fr);
     grid-gap: 5px;
     margin-top: 5em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
 .latest-news-section > div {
     width: 270px;
+}
+.latest-news-section > div > * {
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+}
+.latest-news-section h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.latest-news-author, .latest-news-author a {
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+.latest-news-author a:hover {
+    color: rgb(122, 122, 122);
+}
+.latest-news-section h3:hover {
+    color: orangered;
 }
 
 .latest-news-section img {
@@ -215,4 +256,12 @@ grid-gap: 10px;
 
 .latest-news-title {
     grid-column: 1/ -1;
+    color: orangered;
+    font-family: Avalon, sans-serif;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 990;
+}
+.latest-news-title:hover {
+    color: black;
 }
