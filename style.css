@@ -378,16 +378,92 @@ grid-gap: 10px;
 .gray {
     color: rgb(170, 170, 170);
 }
+.category-title a {
+    text-decoration: none
+}
+.category-title h1{
+    color: orangered;
+    font-family: Avalon, sans-serif;
+    font-size: 28px;
+    font-weight: 990;
+    line-height: 30.8px;
+    padding: 10px;
+}
+.category-title h1:hover {
+    color:black;
+}
 
 .category-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: .5fr 1fr .5fr 1fr */
+    grid-gap: 15px;
+    margin: 10%;
 }
-
-
+.image-text {
+    display:flex;
+    align-items: center;
+}
 .image-text img {
-    width:96px;
+    max-width:96px;
     height: 96px;
 }
-
+.title-category-section {
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/google-photos-video-srtrangers-368x276.jpg) center center no-repeat;
+    background-size: cover;
+    height: 330px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+.title-category-section > a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 90px;
+}
+.title-category-section > p {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+.title-category-section h4 a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: white;
+    text-decoration: none;
+}
+.title-category-section h4:hover a {
+    text-decoration: underline;
+}
+.about , .about a{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.image-text-title {
+    box-sizing: border-box;
+    padding: 15px;
+}
+.image-text-title h3 {
+    color: orangered;
+    font-family: Shentox, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+}
+.image-text-title a {
+    text-decoration: none;
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.5px;
+    color: orangered;
+}
