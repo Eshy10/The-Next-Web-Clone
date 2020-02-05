@@ -167,6 +167,16 @@
   padding-left: 0.5em;
 }
 
+.latest-news-author,
+.latest-news-author a {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+}
+
 .latest-deals-header h5 a {
   text-decoration: none;
 }
@@ -402,6 +412,27 @@ nav {
   line-height: 20px;
 }
 
+.footer-about a:hover {
+  color: white;
+}
+
+.social a:hover {
+  background: transparent;
+}
+
+.deals a:hover {
+  color: orangered;
+}
+
+.funds-info a:hover {
+  color: black;
+}
+
+.funds-title *:hover,
+.latest-deals-header > a:hover {
+  color: black;
+}
+
 .latest-news-author a:hover {
   color: rgb(122, 122, 122);
 }
@@ -438,11 +469,6 @@ nav {
 
 .left-border {
   border-left: 1px solid orangered;
-}
-
-.funds-title *:hover,
-.latest-deals-header > a:hover {
-  color: black;
 }
 
 .latest-funds {
@@ -509,10 +535,6 @@ nav {
   padding: 15px 0;
 }
 
-.funds-info a:hover {
-  color: black;
-}
-
 .funds-info i {
   color: black;
   font-size: 16px;
@@ -524,18 +546,6 @@ nav {
 
 .category-title {
   margin-top: 2em;
-}
-
-.footer-about a:hover {
-  color: white;
-}
-
-.social a:hover {
-  background: transparent;
-}
-
-.deals a:hover {
-  color: orangered;
 }
 
 .category-title h1:hover,
