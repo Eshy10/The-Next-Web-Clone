@@ -274,7 +274,7 @@ grid-gap: 10px;
     color: orangered;
     text-decoration: none;
 }
-.funds-title div * {
+.funds-title div *, .latest-deals-header > a {
     float: right;
     padding: 0 5px;
     margin: 5px;
@@ -285,7 +285,7 @@ grid-gap: 10px;
     color: orangered;
     text-decoration: none;
 }
-.funds-title *:hover {
+.funds-title *:hover , .latest-deals-header > a:hover{
     color: black;
 }
 .latest-funds {
@@ -381,7 +381,7 @@ grid-gap: 10px;
 .category-title a {
     text-decoration: none
 }
-.category-title h1{
+.category-title h1, .latest-deals-header h5 a{
     color: orangered;
     font-family: Avalon, sans-serif;
     font-size: 28px;
@@ -389,7 +389,7 @@ grid-gap: 10px;
     line-height: 30.8px;
     padding: 10px;
 }
-.category-title h1:hover {
+.category-title h1:hover, .latest-deals-header h5 a:hover {
     color:black;
 }
 
@@ -402,6 +402,7 @@ grid-gap: 10px;
 .image-text {
     display:flex;
     align-items: center;
+    height: 150px;
 }
 .image-text img {
     max-width:96px;
@@ -547,4 +548,39 @@ ul li::before {
     font-weight: 400;
     line-height: 19.5px;
     
+}
+.latest-deals-container{
+    margin: 15px 10%;
+}
+.latest-deals-header h5 a {
+    text-decoration: none;
+}
+.latest-deals-header h5 {
+    float: left
+}
+.latest-deals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 100%
+}
+.deals img {
+     width: 100%;
+}
+.deals a {
+    text-decoration: none; 
+    font-family:  "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+}
+.deals a:hover {
+    color: orangered;
+}
+.deals p {
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color:  rgb(85, 85, 85);
 }
