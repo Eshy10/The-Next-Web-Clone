@@ -156,6 +156,12 @@
   z-index: 999;
 }
 
+@keyframes imageIncrease {
+  to {
+    background-size: calc(100% + 15px) calc(100% + 15px);
+  }
+}
+
 .author a {
   text-decoration: none;
 }
@@ -368,6 +374,14 @@ nav {
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Google-photos-796x418.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
+}
+
+.first-news:hover,
+.second-news:hover,
+.third-news:hover {
+  animation-name: imageIncrease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .second-news img,
