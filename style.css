@@ -396,8 +396,9 @@ grid-gap: 10px;
 .category-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     grid-gap: 15px;
-    margin: 10%;
+    margin: 0 10%;
 }
 .image-text {
     display:flex;
@@ -583,4 +584,74 @@ ul li::before {
     font-size: 16px;
     line-height: 20px;
     color:  rgb(85, 85, 85);
+}
+.links {
+    background-color: #131313; 
+    padding: 55px;
+}
+.social {
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(7, 45px);
+}
+.social a {
+    width: 37px;
+    height: 37px;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius : 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none
+}
+.social a:hover {
+    background: transparent;
+}
+.about {
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 19px 0;
+    grid-template-columns: repeat(3, 60px) 100px 60px 60px;
+
+}
+.about a {
+    font-family: Shentox, sans-serif; 
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+.about a:hover {
+    color: white;
+}
+.tos {
+    background-color: #000; 
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.tos * {
+    display: inline-block;
+    max-height: 15px;
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+}
+.tos p {
+    color: rgb(170, 170, 170);
+}
+.tos img {
+    width: 40px;
+    padding-right: 2px;
+}
+.tos a {
+    color: white;
+    text-decoration: none;
+    font-weight:700;
 }
