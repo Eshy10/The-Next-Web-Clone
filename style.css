@@ -823,6 +823,7 @@ ul li::before {
   .yellow-part {
     font-size: 10px;
   }
+
   header {
     display: none;
   }
@@ -974,6 +975,7 @@ ul li::before {
   .tos p {
     text-align: center;
   }
+
   .title-section {
     grid-gap: 1px;
     left: 5px;
