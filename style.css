@@ -1,5 +1,6 @@
 * {
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .nav-first-section {
@@ -348,7 +349,7 @@ i.fa-bars {
 
 .title-info {
   display: grid;
-  grid-template-columns: repeat(3, 110px);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 4px;
 }
 
@@ -819,6 +820,9 @@ ul li::before {
 }
 
 @media all and (max-width: 768px) {
+  .yellow-part {
+    font-size: 10px;
+  }
   header {
     display: none;
   }
@@ -929,6 +933,7 @@ ul li::before {
 
   .title-section {
     grid-gap: 1px;
+    left: 20px;
   }
 
   .pink {
@@ -968,5 +973,9 @@ ul li::before {
 
   .tos p {
     text-align: center;
+  }
+  .title-section {
+    grid-gap: 1px;
+    left: 5px;
   }
 }
