@@ -241,6 +241,8 @@
   height: 45px;
   align-items: center;
   background-color: white;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
 }
 
 .white-part a:hover {
@@ -259,6 +261,14 @@ nav {
   align-items: center;
   padding-left: 8px;
   padding-right: 10px;
+}
+
+i.fa-bars {
+  color: rgb(252, 80, 109);
+}
+
+.pink {
+  display: none;
 }
 
 .nav-section-icon:hover a {
@@ -403,11 +413,11 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 30px repeat(2, 1fr);
-  grid-gap: 5px;
-  width: 80%;
+  grid-gap: 25px;
+  width: 95%;
   margin-top: 5em;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .latest-news-section > div {
@@ -743,7 +753,7 @@ ul li::before {
   display: none;
 }
 
-@media all and (max-width: 950px) {
+@media all and (max-width: 1023px) {
   .latest-news-section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px repeat(auto-fill, 1fr);
@@ -765,9 +775,50 @@ ul li::before {
   .latest-deals-container {
     margin: 15px 2%;
   }
+
+  .fourth-fund {
+    display: none;
+  }
+
+  .funds {
+    width: 30%;
+  }
+
+  .readme {
+    display: none;
+  }
+
+  .white-part > div:nth-child(2) * {
+    font-size: 16px;
+    float: left;
+    padding-top: 14px;
+  }
+
+  .white-part img {
+    display: block;
+    height: 100%;
+    width: 15%;
+    background: linear-gradient(159deg, #e816b4 000%, #db0a3e 50%, #db0a3e 80%, rgba(255, 78, 8, 0.966) 100%);
+    padding: 0.5em;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .white-part {
+    position: relative;
+    display: block;
+  }
+
+  .nav-section-icon {
+    float: right;
+  }
+
+  .header-none {
+    display: none;
+  }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
   header {
     display: none;
   }
@@ -879,6 +930,21 @@ ul li::before {
   .title-section {
     grid-gap: 1px;
   }
+
+  .pink {
+    display: flex;
+  }
+
+  .tos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .white-part > div:nth-child(2) {
+    display: none;
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -891,6 +957,10 @@ ul li::before {
     font-size: 10px;
   }
 
+  .white-part img {
+    width: 25%;
+  }
+
   .funds-titles > *,
   .funds-amount > * {
     margin-left: 25%;
@@ -898,27 +968,5 @@ ul li::before {
 
   .tos p {
     text-align: center;
-  }
-
-  .white-part {
-    position: relative;
-  }
-
-  .white-part > div:nth-child(1) {
-    display: none;
-  }
-
-  .white-part div:nth-child(2) {
-    position: absolute;
-    right: 0;
-  }
-
-  .white-part img {
-    display: block;
-    height: 100%;
-    width: 25%;
-    background: linear-gradient(159deg, #e816b4 000%, #db0a3e 50%, #db0a3e 80%, rgba(255, 78, 8, 0.966) 100%);
-    padding: 0.5em;
-    box-sizing: border-box;
   }
 }
