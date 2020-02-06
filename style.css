@@ -883,16 +883,17 @@ ul li::before {
 
 @media all and (max-width: 450px) {
   .social a {
-    width:25px;
-    height:25px;
+    width: 25px;
+    height: 25px;
   }
 
   .footer-about a {
     font-size: 10px;
   }
 
-  .funds-titles > *, .funds-amount > * {
-   margin-left: 25%;
+  .funds-titles > *,
+  .funds-amount > * {
+    margin-left: 25%;
   }
 
   .tos p {
@@ -903,7 +904,7 @@ ul li::before {
     position: relative;
   }
 
-  .white-part > div:nth-child(1){
+  .white-part > div:nth-child(1) {
     display: none;
   }
 
@@ -917,7 +918,7 @@ ul li::before {
     height: 100%;
     width: 25%;
     background: linear-gradient(159deg, #e816b4 000%, #db0a3e 50%, #db0a3e 80%, rgba(255, 78, 8, 0.966) 100%);
-    padding: .5em;
+    padding: 0.5em;
     box-sizing: border-box;
   }
 }
