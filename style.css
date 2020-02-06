@@ -578,7 +578,7 @@ nav {
 .image-text {
   display: flex;
   align-items: center;
-  height: 150px;
+  height: 100px;
 }
 
 .image-text img {
@@ -712,7 +712,7 @@ ul li::before {
   display: grid;
   justify-content: center;
   grid-gap: 10px;
-  grid-template-columns: repeat(7, 45px);
+  grid-template-columns: repeat(7, auto);
 }
 
 .footer-about {
@@ -720,7 +720,7 @@ ul li::before {
   justify-content: center;
   grid-gap: 10px;
   padding: 19px 0;
-  grid-template-columns: repeat(3, 60px) 100px 60px 60px;
+  grid-template-columns: repeat(6, auto);
 }
 
 .tos {
@@ -737,6 +737,10 @@ ul li::before {
 .tos img {
   width: 40px;
   padding-right: 2px;
+}
+
+.white-part img {
+  display: none;
 }
 
 @media all and (max-width: 950px) {
@@ -874,5 +878,46 @@ ul li::before {
 
   .title-section {
     grid-gap: 1px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .social a {
+    width:25px;
+    height:25px;
+  }
+
+  .footer-about a {
+    font-size: 10px;
+  }
+
+  .funds-titles > *, .funds-amount > * {
+   margin-left: 25%;
+  }
+
+  .tos p {
+    text-align: center;
+  }
+
+  .white-part {
+    position: relative;
+  }
+
+  .white-part > div:nth-child(1){
+    display: none;
+  }
+
+  .white-part div:nth-child(2) {
+    position: absolute;
+    right: 0;
+  }
+
+  .white-part img {
+    display: block;
+    height: 100%;
+    width: 25%;
+    background: linear-gradient(159deg, #e816b4 000%, #db0a3e 50%, #db0a3e 80%, rgba(255, 78, 8, 0.966) 100%);
+    padding: .5em;
+    box-sizing: border-box;
   }
 }
