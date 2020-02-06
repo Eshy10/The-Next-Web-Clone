@@ -1,0 +1,983 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-first-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em;
+  background-color: black;
+}
+
+.nav-first-section .news-link {
+  color: white;
+}
+
+.nav-first-section a {
+  text-decoration: none;
+  color: #6e6e6e;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tos a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-about a {
+  font-family: "Shentox", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+}
+
+.social a {
+  width: 37px;
+  height: 37px;
+  background-color: #333;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.deals a {
+  text-decoration: none;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+}
+
+.image-text-title a {
+  text-decoration: none;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.5px;
+  color: orangered;
+}
+
+.about,
+.about a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.title-category-section > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 90px;
+}
+
+.category-title a {
+  text-decoration: none;
+}
+
+.funds-news a {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+  display: block;
+}
+
+.funds-info a {
+  margin-left: 5px;
+}
+
+.tos * {
+  display: inline-block;
+  max-height: 15px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+
+.funds-info * {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+  display: block;
+}
+
+.funds-amount * {
+  margin-left: 40%;
+}
+
+.funds-titles * {
+  margin-left: 40%;
+}
+
+.title-info * {
+  color: rgb(197, 194, 194);
+  font-size: 15px;
+}
+
+.funds-title div *,
+.latest-deals-header > a {
+  float: right;
+  padding: 0 5px;
+  margin: 5px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: orangered;
+  text-decoration: none;
+}
+
+.first-news > a,
+.second-news > a,
+.third-news > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+@keyframes imageIncrease {
+  to {
+    background-size: calc(100% + 15px) calc(100% + 15px);
+  }
+}
+
+.author a {
+  text-decoration: none;
+}
+
+.white-part a {
+  text-decoration: none;
+  color: #a9a9a9;
+  text-transform: uppercase;
+  padding-left: 0.5em;
+}
+
+.latest-news-author,
+.latest-news-author a {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+}
+
+.latest-deals-header h5 a {
+  text-decoration: none;
+}
+
+.text-links li a {
+  color: rgb(85, 85, 85);
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.title-category-section h4 a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 999;
+}
+
+.category-title h1,
+.latest-deals-header h5 a {
+  color: orangered;
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+  font-weight: 990;
+  line-height: 30.8px;
+  padding: 10px;
+}
+
+.funds-title h3,
+.funds-title h3 a {
+  float: left;
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+  font-weight: 990;
+  line-height: 32px;
+  color: orangered;
+  text-decoration: none;
+}
+
+.nav-first-section a:hover {
+  color: white;
+}
+
+.nav-second-section {
+  position: sticky;
+  top: 0;
+}
+
+.white-part {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  align-items: center;
+  background-color: white;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+}
+
+.white-part a:hover {
+  color: black;
+}
+
+nav {
+  z-index: 9999999;
+}
+
+.nav-section-icon {
+  border-left: 1px solid grey;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 10px;
+}
+
+i.fa-bars {
+  color: rgb(252, 80, 109);
+}
+
+.pink {
+  display: none;
+}
+
+.nav-section-icon:hover a {
+  color: rgb(104, 101, 101);
+}
+
+.nav-section-icon i {
+  transform: scaleX(-1);
+}
+
+.yellow-part {
+  box-sizing: border-box;
+  height: 30px;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  background-color: #f9dd33;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 15px;
+}
+
+.hot-news {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'first-news second-news'
+    'first-news third-news';
+  grid-gap: 8px;
+}
+
+.first-news {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Disney-Plus-796x417.jpg) center center no-repeat;
+  background-size: cover;
+  height: 417px;
+  position: relative;
+  grid-area: first-news;
+}
+
+.first-news img {
+  width: 50%;
+  height: auto;
+  z-index: 999;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.gradient {
+  position: absolute;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(159deg, #e83b16 000%, #e83b16 50%, rgba(9, 9, 121, 0) 80%, rgba(9, 9, 121, 0) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.date {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: white;
+}
+
+.title-section {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+}
+
+.title-info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 4px;
+}
+
+.title-small {
+  font-weight: 700;
+  line-height: 30.8px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.title-category,
+.title {
+  color: white;
+}
+
+.title {
+  font-size: 56px;
+  font-family: Avalon, sans-serif;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.second-news {
+  grid-area: second-news;
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/nasacolony-796x389.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.third-news {
+  grid-area: third-news;
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Google-photos-796x418.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.first-news:hover,
+.second-news:hover,
+.third-news:hover {
+  animation-name: imageIncrease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.second-news img,
+.third-news img {
+  width: 100%;
+}
+
+.second-gradient {
+  position: absolute;
+  background: #000;
+  background: linear-gradient(-20deg, #000 000%, #000 40%, rgba(9, 9, 121, 0) 60%, rgba(9, 9, 121, 0) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.latest-news-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30px repeat(2, 1fr);
+  grid-gap: 25px;
+  width: 95%;
+  margin-top: 5em;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.latest-news-section > div {
+  max-width: 270px;
+}
+
+.latest-news-section > div > * {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.latest-news-section h3 {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.footer-about a:hover {
+  color: white;
+}
+
+.social a:hover {
+  background: transparent;
+}
+
+.deals a:hover {
+  color: orangered;
+}
+
+.funds-info a:hover {
+  color: black;
+}
+
+.funds-title *:hover,
+.latest-deals-header > a:hover {
+  color: black;
+}
+
+.latest-news-author a:hover {
+  color: rgb(122, 122, 122);
+}
+
+.image-text-title h3 {
+  color: orangered;
+  font-family: "Shentox", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+.latest-news-section h3:hover {
+  color: orangered;
+}
+
+.latest-news-section img {
+  width: 100%;
+  max-height: 135px;
+}
+
+.latest-news-title {
+  grid-column: 1/ -1;
+  color: orangered;
+  font-family: Avalon, sans-serif;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 990;
+}
+
+.latest-news-title:hover {
+  color: black;
+}
+
+.left-border {
+  border-left: 1px solid orangered;
+}
+
+.latest-funds {
+  margin: 0 10%;
+  margin-top: 4em;
+}
+
+.funds-container {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+}
+
+.funds {
+  width: 23%;
+  height: 293.13px;
+  position: relative;
+}
+
+.funds-titles {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 39.31px;
+  background-color: orangered;
+  color: white;
+  font-family: Avalon, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.funds-amount {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #fcebe7;
+  color: black;
+  font-family: Avalon, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 10px 0;
+}
+
+.funds-amount p {
+  font-family: "Shentox", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.funds img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 5%;
+  top: 10px;
+}
+
+.funds-info {
+  border-bottom: 1px solid orangered;
+  margin-bottom: 5px;
+  padding: 15px 0;
+}
+
+.funds-info i {
+  color: black;
+  font-size: 16px;
+}
+
+.gray {
+  color: rgb(170, 170, 170);
+}
+
+.category-title {
+  margin-top: 2em;
+}
+
+.category-title h1:hover,
+.latest-deals-header h5 a:hover {
+  color: black;
+}
+
+.category-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 15px;
+  margin: 0 10%;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.image-text img {
+  max-width: 96px;
+  height: 86px;
+}
+
+.google-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/google-photos-video-srtrangers-368x276.jpg) center center no-repeat;
+}
+
+.headphone-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Dyson-Air-purifying-headphones-368x276.jpg)center center no-repeat;
+}
+
+.soldiers-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Soldier-Flickr-368x276.png)center center no-repeat;
+}
+
+.movie-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-368x276.png)center center no-repeat;
+}
+
+.animation-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/buzzy-bees-368x276.jpg)center center no-repeat;
+}
+
+.crypto-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/petro-368x276.jpg)center center no-repeat;
+}
+
+.amazon-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg)center center no-repeat;
+}
+
+.disney-picture {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Hamilton-hed-368x276.jpg)center center no-repeat;
+}
+
+.title-category-section {
+  background-size: cover;
+  height: 330px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+.black-gradient {
+  position: absolute;
+  background: #000;
+  background: linear-gradient(0deg, #000 000%, #000 40%, rgba(9, 9, 121, 0) 60%, rgba(9, 9, 121, 0) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.title-category-section > p {
+  font-size: 14px;
+  color: rgb(197, 191, 191);
+  position: relative;
+  z-index: 999;
+}
+
+.title-category-section h4:hover a {
+  text-decoration: underline;
+}
+
+.image-text-title {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.text-links li {
+  border-bottom: 0.7px solid rgb(230, 215, 215);
+  padding: 0.5em;
+  width: 70%;
+  margin-left: 1.3em;
+}
+
+ul li::before {
+  content: "\2022";
+  color: orangered;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.latest-deals-container {
+  margin: 15px 10%;
+}
+
+.latest-deals-header h5 {
+  float: left;
+}
+
+.latest-deals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+}
+
+.deals img {
+  width: 100%;
+}
+
+.deals p {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+}
+
+.links {
+  background-color: #131313;
+  padding: 55px;
+}
+
+.social {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(7, auto);
+}
+
+.footer-about {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 19px 0;
+  grid-template-columns: repeat(6, auto);
+}
+
+.tos {
+  background-color: #000;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.tos p {
+  color: rgb(170, 170, 170);
+}
+
+.tos img {
+  width: 40px;
+  padding-right: 2px;
+}
+
+.white-part img {
+  display: none;
+}
+
+@media all and (max-width: 1023px) {
+  .latest-news-section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px repeat(auto-fill, 1fr);
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .category-section {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2%;
+  }
+
+  .latest-deals {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .latest-deals-container {
+    margin: 15px 2%;
+  }
+
+  .fourth-fund {
+    display: none;
+  }
+
+  .funds {
+    width: 30%;
+  }
+
+  .readme {
+    display: none;
+  }
+
+  .white-part > div:nth-child(2) * {
+    font-size: 16px;
+    float: left;
+    padding-top: 14px;
+  }
+
+  .white-part img {
+    display: block;
+    height: 100%;
+    width: 15%;
+    background: linear-gradient(159deg, #e816b4 000%, #db0a3e 50%, #db0a3e 80%, rgba(255, 78, 8, 0.966) 100%);
+    padding: 0.5em;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .white-part {
+    position: relative;
+    display: block;
+  }
+
+  .nav-section-icon {
+    float: right;
+  }
+
+  .header-none {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .yellow-part {
+    font-size: 10px;
+  }
+
+  header {
+    display: none;
+  }
+
+  .hot-news {
+    margin: 5px auto;
+    width: 98%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      'first-news'
+      'second-news'
+      'third-news';
+  }
+
+  .latest-news-section {
+    grid-template-columns: none;
+    grid-template-rows: 30px repeat(8, 1fr);
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .category-section {
+    grid-template-columns: 1fr;
+    margin: 0 2%;
+  }
+
+  .funds-container {
+    flex-direction: column;
+  }
+
+  .funds {
+    width: 98%;
+  }
+
+  .funds-titles > *,
+  .funds-amount > * {
+    margin-left: 20%;
+  }
+
+  .latest-funds {
+    margin: 0 2%;
+  }
+
+  .left-border {
+    border: none;
+  }
+
+  .funds-title div * {
+    float: left;
+    clear: both;
+  }
+
+  .latest-news-section img {
+    float: left;
+    width: 20%;
+    margin-right: 0.5em;
+  }
+
+  .latest-news-section > div {
+    max-width: 100%;
+  }
+
+  .latest-news-section h3 {
+    font-size: 14px;
+  }
+
+  .latest-deals {
+    grid-template-columns: none;
+    grid-template-rows: repeat(8, 1fr);
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .deals img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 0.5em;
+  }
+
+  .deals a,
+  .deals p {
+    font-size: 14px;
+  }
+
+  .latest-deals-container {
+    margin: 15px 2%;
+  }
+
+  .first-news,
+  .second-news,
+  .third-news {
+    height: 162px;
+  }
+
+  .first-news img {
+    display: none;
+  }
+
+  .title,
+  .title-small {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .title-section {
+    grid-gap: 1px;
+    left: 20px;
+  }
+
+  .pink {
+    display: flex;
+  }
+
+  .tos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .white-part > div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .social a {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-about a {
+    font-size: 10px;
+  }
+
+  .white-part img {
+    width: 25%;
+  }
+
+  .funds-titles > *,
+  .funds-amount > * {
+    margin-left: 25%;
+  }
+
+  .tos p {
+    text-align: center;
+  }
+
+  .title-section {
+    grid-gap: 1px;
+    left: 5px;
+  }
+}
