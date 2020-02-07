@@ -351,6 +351,7 @@ i.fa-bars {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 4px;
+  justify-content: flex-start;
 }
 
 .title-small {
