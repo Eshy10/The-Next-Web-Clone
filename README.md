@@ -13,7 +13,7 @@ This Is a Clone of The Next Web website
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Eshy10/The-Next-Web-Clone/feature-page/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Eshy10/The-Next-Web-Clone/1385f4511b9b8f45ba33961c8883e232d37086c9/index.html)
 
 
 ### Usage
